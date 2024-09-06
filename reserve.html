@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Reserve a Table</title>
+</head>
+
+<body>
+
+    <button class="button go-back" onclick="goBack()">Go Back</button>
+
+    <div class="container">
+        
+        <section class="reservation-section">
+            <h2>Reserve a Table</h2>
+            <form class="reservation-form" action="#" method="post">
+                
+                <div class="form-group">
+                    <label for="reservation-date">Select Date:</label>
+                    <input type="date" id="reservation-date" name="reservation-date" required>
+                </div>
+                
+                
+                <div class="form-group">
+                    <label for="reservation-time">Select Time:</label>
+                    <input type="time" id="reservation-time" name="reservation-time" required>
+                </div>
+                
+                
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="people-count">Number of People:</label>
+                    <input type="number" id="people-count" name="people-count" required min="1">
+                </div>
+                
+                
+                <button type="submit" class="btn-submit">Reserve</button>
+            </form>
+        </section>
+    </div>
+
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>

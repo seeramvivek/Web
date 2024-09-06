@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Indian Menu</title>
+</head>
+
+<body>
+
+    
+    <button class="button go-back" onclick="goBack()">Go Back</button>
+
+    <div class="container">
+        
+        <section class="menu-section">
+            <h2>Indian Menu</h2>
+            <div class="menu-grid">
+                
+                <div class="menu-item">
+                    <img src="images/biryani.jpg" alt="Biryani">
+                    <h3>Biryani</h3>
+                    <p>Delicious rice dish with spices and meat or vegetables.</p>
+                    <span class="price" id="price-biryani">$12.99</span>
+                    <div class="item-options">
+                        <div class="quantity-adjustment">
+                            <button class="button quantity-minus" onclick="decreaseQuantity('biryani')">-</button>
+                            <span class="quantity-count" id="count-biryani">1</span>
+                            <button class="button quantity-plus" onclick="increaseQuantity('biryani')">+</button>
+                        </div>
+                        <button class="button add-to-bag" onclick="addToBag('biryani')">Add to Bag</button>
+                    </div>
+                </div>
+                
+               
+                <div class="menu-item">
+                    <img src="images/paneer-tikka.jpg" alt="Paneer Tikka">
+                    <h3>Paneer Tikka</h3>
+                    <p>Grilled paneer marinated in spices.</p>
+                    <span class="price" id="price-paneer-tikka">$10.99</span>
+                    <div class="item-options">
+                        <div class="quantity-adjustment">
+                            <button class="button quantity-minus" onclick="decreaseQuantity('paneer-tikka')">-</button>
+                            <span class="quantity-count" id="count-paneer-tikka">1</span>
+                            <button class="button quantity-plus" onclick="increaseQuantity('paneer-tikka')">+</button>
+                        </div>
+                        <button class="button add-to-bag" onclick="addToBag('paneer-tikka')">Add to Bag</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images/butter-chicken.jpg" alt="Butter Chicken">
+                    <h3>Butter Chicken</h3>
+                    <p>Chicken cooked in a creamy tomato sauce.</p>
+                    <span class="price" id="price-butter-chicken">$14.99</span>
+                    <div class="item-options">
+                        <div class="quantity-adjustment">
+                            <button class="button quantity-minus" onclick="decreaseQuantity('butter-chicken')">-</button>
+                            <span class="quantity-count" id="count-butter-chicken">1</span>
+                            <button class="button quantity-plus" onclick="increaseQuantity('butter-chicken')">+</button>
+                        </div>
+                        <button class="button add-to-bag" onclick="addToBag('butter-chicken')">Add to Bag</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images/samosa.jpg" alt="Samosa">
+                    <h3>Samosa</h3>
+                    <p>Pastry filled with spiced potatoes and peas.</p>
+                    <span class="price" id="price-samosa">$4.99</span>
+                    <div class="item-options">
+                        <div class="quantity-adjustment">
+                            <button class="button quantity-minus" onclick="decreaseQuantity('samosa')">-</button>
+                            <span class="quantity-count" id="count-samosa">1</span>
+                            <button class="button quantity-plus" onclick="increaseQuantity('samosa')">+</button>
+                        </div>
+                        <button class="button add-to-bag" onclick="addToBag('samosa')">Add to Bag</button>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="images/chicken-tikka-masala.jpg" alt="Chicken Tikka Masala">
+                    <h3>Chicken Tikka Masala</h3>
+                    <p>Grilled chicken in a flavorful tomato sauce.</p>
+                    <span class="price" id="price-chicken-tikka-masala">$13.99</span>
+                    <div class="item-options">
+                        <div class="quantity-adjustment">
+                            <button class="button quantity-minus" onclick="decreaseQuantity('chicken-tikka-masala')">-</button>
+                            <span class="quantity-count" id="count-chicken-tikka-masala">1</span>
+                            <button class="button quantity-plus" onclick="increaseQuantity('chicken-tikka-masala')">+</button>
+                        </div>
+                        <button class="button add-to-bag" onclick="addToBag('chicken-tikka-masala')">Add to Bag</button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="images/chole.jpg" alt="Chole">
+                    <h3>Chole</h3>
+                    <p>Spiced chickpea curry.</p>
+                    <span class="price" id="price-chole">$8.99</span>
+                    <div class="item-options">
+                        <div class="quantity-adjustment">
+                            <button class="button quantity-minus" onclick="decreaseQuantity('chole')">-</button>
+                            <span class="quantity-count" id="count-chole">1</span>
+                            <button class="button quantity-plus" onclick="increaseQuantity('chole')">+</button>
+                        </div>
+                        <button class="button add-to-bag" onclick="addToBag('chole')">Add to Bag</button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <button class="button go-to-basket" onclick="goToBasket()">Go to Basket</button>
+        </section>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
